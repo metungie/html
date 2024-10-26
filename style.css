@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #c9c9c9;
+    color: #000;
+    margin: 0 auto;
+    padding-top: 100px;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    border-radius: 40px;
+    background-color: rgb(245, 245, 245);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    background-color: #ffffff;
+    border-radius: 40px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.navbar .logo {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+    flex-wrap: wrap;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.right-nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+.hero {
+    text-align: center;
+    background-color: #fff;
+    padding: 50px 10px;
+    border-radius: 40px;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 3vw;
+    /* responsive font size */
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+
+.scroll-download {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.scroll-button {
+    margin-top: 8px;
+}
+
+.scroll-button button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.sd {
+    display: flex;
+    flex-wrap: wrap;
+    color: #000;
+}
+
+.left h1 {
+    color: #ffffff;
+    background-color: #000;
+    border-radius: 50%;
+    font-size: 60px;
+    margin-left: 20px;
+    padding: 10px 20px;
+}
+
+.brands {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    background-color: #ffffff;
+    border-radius: 40px;
+    flex-wrap: wrap;
+}
+
+.brand img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+nav {
+    background-color: #e9e8e8;
+    padding: 10px;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.home {
+    background-color: #ffffff;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+nav ul {
+    align-items: center;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 10vw;
+    }
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .brands {
+        flex-direction: column;
+        align-items: center;
+    }
+    .scroll-download {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 430px) {
+    .navbar ul li a {
+        font-size: 11px;
+    }
+}
